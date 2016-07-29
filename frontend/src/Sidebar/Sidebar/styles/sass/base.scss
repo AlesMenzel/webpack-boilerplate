@@ -1,0 +1,87 @@
+.sidebar {
+	width: 170px;
+	height: 100%;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	border-right: 10px solid #F0F0F0;
+
+	background: #222222;
+}
+.hamburger {
+	height: 55px;
+
+	font-size: 14px;
+	color: #444444;
+
+	text-align: right;
+}
+.hamburger i {
+	margin: 10px 10px 0 0;
+}
+.hamburger i:hover {
+	color: #FFFFFF;
+
+	cursor: pointer;
+}
+.logo {
+	margin: 0 auto;
+	display: block;
+}
+.nav-list-header {
+	margin: 50px 0 0 0;
+	padding: 0 0 15px 18px;
+
+	font-size: 11px;
+	color: #444444;
+	font-weight: 700;
+	font-family: Raleway;
+
+	text-transform: uppercase;
+
+	border-bottom: 1px solid #444444;
+}
+.nav-list {
+	margin: 15px 0 0 0;
+	padding: 0 0 0 22px;
+
+	display: inline-block;
+}
+.nav-list-item {
+	margin: 15px 0;
+
+	list-style: none;
+
+	display: flex;
+	align-items: center;
+}
+.nav-list-item i {
+	margin: 0 8px 0 0;
+
+	font-size: 16px;
+	color: #444444;
+}
+.nav-list-item a {
+	margin: 0 8px 0 0;
+
+	font-size: 13px;
+	color: #444444;
+	font-weight: 600;
+	font-family: Raleway;
+}
+.nav-list-item:hover {
+	cursor: pointer;
+}
+.nav-list-item:hover a{
+	color: #FFFFFF;
+	font-weight: 700;
+}
+.nav-list-item:hover i{
+	color: #F0F0F0;
+}
+.nav-list-item.active * {
+	color: #FFFFFF;
+	font-weight: 700;
+}

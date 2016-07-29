@@ -1,0 +1,193 @@
+.table__row {
+
+}
+
+.table__row::after {
+	content: ' ';
+	display: block;
+	clear: both;
+}
+
+.table__row:hover {
+	background-color: #F9F9F9;
+}
+
+.table__row--active {
+	background-color: #F6F6F6;
+}
+
+.table__row:nth-child(even) {
+	background-color: #F9F9F9;
+}
+
+.table__cell {
+	height: 100%;
+	padding: 0 15px;
+
+	display: flex;
+	align-items: center;
+
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+
+	float: left;
+}
+
+.document__row {
+	margin: 0 -15px;
+	height: 40px;
+
+	font-size: 12px;
+}
+
+.document__col-id {
+	width: 5%;
+}
+
+.document__col-name {
+	width: 25%;
+}
+
+.document__col-url {
+	width: 30%;
+}
+
+.document__col-size {
+	width: 10%;
+}
+
+.document__col-state {
+	width: 10%;
+}
+
+.document__col-actions {
+	width: 20%;
+}
+
+.header {
+
+}
+
+.header__sortable-item:hover {
+	background-color: #F6F6F6;
+}
+
+.header__id,
+.header__date,
+.header__location,
+.header__state,
+.header__actions,
+.header__points {
+	height: 50px;
+	line-height: 50px;
+
+	font-weight: 600;
+	font-size: 13px;
+	color: #2C3E50;
+
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.header__points {
+	width: 12.6666%;
+}
+
+.header__actions {
+	width: 20.6666%;
+}
+
+.header__date--active {
+	border-bottom: 2px solid #2C3E50;
+}
+
+.header__order {
+	/*margin: 0 20px 0 0;*/
+
+	line-height: 50px;
+
+	float: right;
+}
+
+.header__icon {
+	margin-right: 10px;
+}
+
+.item:nth-child(odd) {
+
+}
+
+.item:nth-child(even) {
+	background-color: #F9F9F9;
+}
+
+.item__id,
+.item__date,
+.item__location,
+.item__state,
+.item__actions,
+.item__points {
+	margin: 15px 0;
+
+	/*font-family: "Open Sans";*/
+	font-size: 13px;
+	color: #2C3E50;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.state__icon-success,
+.state__icon-warning,
+.state__icon-info,
+.state__icon-error,
+.state__icon-waiting {
+	margin-right: 5px;
+
+	font-size: 13px;
+}
+
+.state__icon-success {
+	color: #00B285;
+}
+
+.state__icon-warning {
+	color: #F29B12;
+}
+
+.state__icon-info {
+	color: #3498DB;
+}
+
+.state__icon-error {
+	color: #E74C3C;
+}
+
+.state__icon-waiting {
+	color: #2C3E50;
+}
+
+.points__icon {
+	margin-right: 5px;
+
+	font-size: 13px;
+}
+
+.item__action-record,
+.item__action-edit,
+.item__action-remove {
+	margin-right: 5px;
+}
+
+.item__points {
+	width: 12.6666%;
+}
+
+.item__actions {
+	width: 20.6666%;
+}
+
