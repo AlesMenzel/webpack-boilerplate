@@ -3,9 +3,9 @@ import { Component } from 'react';
 import HTML5Backend from 'react-dnd-html5-backend'
 import { DragDropContext } from 'react-dnd'
 
-import Sidebar from './Sidebar/Sidebar/Component'
-import Content from './Content/Document/DocumentsContent/Component'
-import Header from './Header/Header/Component'
+import Sidebar from './views/Sidebar/Sidebar/Component'
+import Content from './views/Content/Document/DocumentsContent/Component'
+import Header from './views/Header/Header/Component'
 
 @DragDropContext(HTML5Backend)
 export default class App extends Component {

@@ -18,12 +18,14 @@ module.exports = {
 			{
 				test: /\.html$/,
 				exclude: /node_modules/,
-				loader: 'file?name=[name].[ext]'
+				loaders: ['file?name=[name].[ext]']
 			},
 			{
-				test: /\.jsx?$/,
+				test: /\.(js|jsx)$/,
 				exclude: /node_modules/,
-				loaders: ['babel']
+				loaders: [
+					'babel'
+				]
 			},
 			{
 				test: /\.(jpe?g|png|gif|svg)$/i,
@@ -33,8 +35,12 @@ module.exports = {
 				]
 			},
 			{
-				test: /\.s?css$/,
+				test: /\.scss$/,
 				loaders: ['style', 'css', 'sass']
+			},
+			{
+				test: /\.(eot|svg|ttf|woff|woff2)$/,
+				loaders: ['file?name=fonts/[name].[ext]']
 			}
 		]
 	},
