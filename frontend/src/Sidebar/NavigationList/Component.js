@@ -1,4 +1,5 @@
 /* Components */
+import React from 'react'
 import NavigationItem from '../NavigationItem/Component'
 
 /* Styles */

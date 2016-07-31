@@ -1,44 +1,39 @@
-var webpack = require('webpack');
-var path = require("path");
+var webpack = require('webpack')
 
 module.exports = {
 	entry: {
-		app: ['./src/index.js']
+		app: ['./src/entry.js'],
+		vendor: ['react', 'react-dom', 'lodash', 'react-bootstrap']
 	},
 	output: {
-		path: "/build",
+		path: './build',
 		filename: 'bundle.js',
-		publicPath: "/assets/"
+		publicPath: './'
 	},
+	plugins: [
+		new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js')
+	],
 	module: {
 		loaders: [
 			{
 				test: /\.jsx?$/,
 				exclude: /node_modules/,
-				loader: 'babel'
+				loaders: ['babel']
 			},
 			{
 				test: /\.(jpe?g|png|gif|svg)$/i,
 				loaders: [
-					'file?hash=sha512&digest=hex&name=[hash].[ext]',
+					'file?hash=sha512&digest=hex&name=images/[hash].[ext]',
 					'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
 				]
 			},
 			{
 				test: /\.s?css$/,
-				loaders: ["style", "css", "sass"]
+				loaders: ['style', 'css', 'sass']
 			}
 		]
 	},
-	externals: {
-		// Don't bundle the 'react' npm package with the component.
-		'react': 'React'
-	},
 	resolve: {
-		// Include empty string '' to resolve files by their explicit extension
-		// (e.g. require('./somefile.ext')).
-		// Include '.js', '.jsx' to resolve files by these implicit extensions
-		// (e.g. require('underscore')).
 		extensions: ['', '.js', '.jsx']
 	},
 	devServer: {

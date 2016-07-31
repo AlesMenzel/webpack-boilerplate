@@ -1,4 +1,5 @@
 /* Components */
+import React from 'react';
 
 /* Styles */
 import './styles/sass/base.scss'

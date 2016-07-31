@@ -1,4 +1,5 @@
 /* Components */
+import React from 'react';
 import { Component, PropTypes } from 'react';
 import { findDOMNode } from 'react-dom';
 import { DropTarget, DragSource } from 'react-dnd';

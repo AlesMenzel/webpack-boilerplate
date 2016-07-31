@@ -1,9 +1,10 @@
 {
-  "name": "svj-application",
+  "name": "webpack-boilerplate",
   "version": "0.0.1",
   "dependencies": {
     "lodash": "^4.13.1",
     "react": "^15.1.0",
+    "react-bootstrap": "^0.30.0",
     "react-dnd": "^2.1.4",
     "react-dnd-html5-backend": "^2.1.2",
     "react-dom": "^15.1.0",
@@ -26,11 +27,10 @@
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.0",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "url-loader": "^0.5.7"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run build",
     "build": "webpack --progress",
     "start-dev": "webpack-dev-server --inline --hot"
   }

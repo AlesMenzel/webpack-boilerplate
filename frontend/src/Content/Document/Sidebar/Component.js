@@ -1,4 +1,5 @@
 /* Components */
+import React from 'react';
 import CategoryListContainer from '../CategoryList/Container'
 
 /* Styles */

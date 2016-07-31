@@ -1,4 +1,5 @@
 /* Components */
+import React from 'react';
 import SidebarContainer from '../Sidebar/Container'
 import DocumentListContainer from '../DocumentList/Container'
 
