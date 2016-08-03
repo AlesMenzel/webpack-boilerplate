@@ -3,7 +3,7 @@ var webpack = require('webpack')
 module.exports = {
 	entry: {
 		app: ['./src/entry.js'],
-		vendor: ['react', 'react-dom', 'lodash', 'react-bootstrap']
+		vendor: ['react', 'react-dom', 'react-router', 'react-redux', 'lodash', 'react-bootstrap']
 	},
 	output: {
 		path: './build',

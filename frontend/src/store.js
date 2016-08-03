@@ -1,8 +1,8 @@
 import { createStore, combineReducers } from 'redux'
 
-import category from './views/Content/Document/CategoryList/model/reducers'
-import document from './views/Content/Document/DocumentList/model/reducers'
-import navigation from './views/Sidebar/NavigationList/model/reducers'
+import category from './components/CategoryList/model/reducers'
+import document from './components/DocumentList/model/reducers'
+import navigation from './components/Sidebar/NavigationList/model/reducers'
 
 const reducers = combineReducers({
 	category,
